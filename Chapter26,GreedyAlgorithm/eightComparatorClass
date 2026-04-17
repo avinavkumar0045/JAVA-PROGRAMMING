@@ -1,0 +1,12 @@
+A ComparatorinJavaisaninterfacethatisusedtoordertheobjectsofuser-definedclasses.
+Acomparatorobjectiscapableofcomparingtwoobjects of the same class
+
+public void sort(List list, ComparatorClass c)
+
+Lambda expression in java
+
+Comparator<ClassName> comparator = Comparator.comparing(o -> o.property);
+
+Comparator<Student> comparator = Comparator.comparing(o -> o.age);
+
+Collections.sort(students, comparator); // used this method in the chapter a lot 

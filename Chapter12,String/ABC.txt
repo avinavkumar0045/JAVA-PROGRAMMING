@@ -1,0 +1,30 @@
+Some tricks:
+// string to array
+char [] tARRAY = t.toCharArray();
+
+// sorting 
+ Arrays.sort(tARRAY);
+
+ // StringBuilder to string
+  str = strB.toString();
+      
+// Comparison
+ Arrays.equals(tARRAY,sARRAY);
+
+   String str="";
+        for(int i = 0;i<chars.length ; i++){
+             str += chars[i];
+        }
+        String newStr = "";
+        for(int i=0;i<str.length(); i++){ // o(n), linear time complexity
+            Integer count =1;
+            while(i<str.length()-1 && str.charAt(i) == str.charAt(i+1)){
+                count++;
+                i++;
+            }
+            newStr += str.charAt(i); // ye kyu ki, eg., last 'c', ke liye while case galat ho jaiega, 
+            if(count >1){ // agar count equal to 1 hai, to bass wahi print kara denge
+                newStr += count.toString();
+            }           
+        }
+        return newStr.length();
