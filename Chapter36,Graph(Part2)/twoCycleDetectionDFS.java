@@ -48,6 +48,7 @@ public class twoCycleDetectionDFS { // CYCLE DETECTION IN UNDIRECTED GRAPH
      // detect cycle  Util for each component 
     public static boolean detectCycleUtil( ArrayList<Edge> graph[] , boolean vis[],int curr ,int parent){
         vis[curr] = true;
+         
 
         for( int i =0; i<graph[curr].size();i++){
             Edge e = graph[curr].get(i);

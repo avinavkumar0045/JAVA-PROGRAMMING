@@ -111,8 +111,7 @@ public class oneBFSinConnectedComp {
             // e.dest = neighbour 
             if( !vis[e.dest] && HasPath(graph , e.dest , desti , vis)){
                 return true;
-            }
-            
+            }   
         }
         return false;
     }

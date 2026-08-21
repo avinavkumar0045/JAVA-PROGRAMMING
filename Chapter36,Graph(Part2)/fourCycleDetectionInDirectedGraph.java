@@ -42,7 +42,7 @@ public class fourCycleDetectionInDirectedGraph {
         stack[curr] = true;
 
         for( int i =0; i<graph[curr].size();i++){
-            Edge e = graph[curr].get(i);
+            Edge e = graph[curr].get(i);// to get all the nodes connected to a source ( means all the dest from a src)
             
             if( stack[e.dest] ){ // is a cycle , matlab, stakc ke andar alredy neighbour hai 
                 return true;
