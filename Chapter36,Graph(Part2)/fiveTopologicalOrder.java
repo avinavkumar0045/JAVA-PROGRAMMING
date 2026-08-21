@@ -42,7 +42,7 @@ public class fiveTopologicalOrder {
     }
 
     public static void  topSortUtil(ArrayList<Edge> graph[] , int curr  , boolean vis[] , Stack<Integer> s){
-
+        
         vis[curr] = true;
         for( int i =0; i<graph[curr].size();i++){
             Edge e = graph[curr].get(i);
@@ -52,6 +52,7 @@ public class fiveTopologicalOrder {
         }
         s.push(curr);
     }
+
     public static void main(String[] args) {
         int v = 6;
         ArrayList<Edge> graph[] =  new ArrayList[v];
