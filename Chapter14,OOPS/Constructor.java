@@ -6,7 +6,7 @@ public class Constructor {
         Student s1 = new Student(); // No need to define ,it will be called automatically ,it will recognise on the basis of arguments // #
         //2B
        // Student s2 = new Student("Avinav"); // @
-       // Student s3 = new Student(123); // !
+       // Student s3 = new Student(123); // 
        // Student s4 = new Student("Avianav",123); // will not be called as, no such cunstructor exists
        s1.name ="Avinav";
        s1.roll = 56;
@@ -57,7 +57,7 @@ class Student{
         marks = new int[3];
         this.name = name;
     } 
-    Student(int roll){ // !
+    Student(int roll){ // 
         marks = new int[3];
         this.roll = roll;
     }

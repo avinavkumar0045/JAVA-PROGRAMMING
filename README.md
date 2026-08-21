@@ -25,16 +25,17 @@ This repository is a study and practice workspace for Java programming concepts 
 - `Chapter23, STACK(Part 1)/`, `Chapter24, Stack 2/` — Stack data structure and stack-based algorithms.
 - `Chapter25,Queue/` — Queue behavior and implementation exercises.
 - `Chapter26,GreedyAlgorithm/` — Greedy problem solving and optimization tasks.
-- `Chapter27,BinaryTree(Part 1,2)/`, `Chapter29,BinaryTree(Part 3)/` — Binary tree traversal, construction, and operations.
+- `Chapter27,BinaryTree(Part 1,2)/`, `Chapter29,BinaryTree(Part 3)/` — Binary tree traversal, construction, and operations. Chapter 28 is not currently present.
 - `Chapter30,BinarySearchTree/` — BST insertion, search, and tree-based problems.
 - `Chapter31,Balanced BST/` — Balanced binary search tree concepts.
 - `Chapter32,Heaps/` — Heap data structure and priority queue examples.
 - `Chapter33,Hashing/` — Hash tables and map-related practice.
 - `Chapter34,Tries/` — Trie structures and string prefix problems.
-- `Chapter35,Graph,Part1/` through `Chapter40,GraphSupliments/` — Graph theory, traversal, shortest paths, and advanced graph topics.
-- `Chapter41,DP(Part 1)/` through `Chapter46,DP,part6/` — Dynamic programming practice across multiple chapters.
+- `Chapter35,Graph,Part1/` through `Chapter40,GraphSupliments/` — Graph construction and traversal, connected components, bipartite and cycle detection, topological sorting, shortest paths (Dijkstra, Bellman-Ford, and Floyd-Warshall), minimum spanning trees, flood fill, and SCC, articulation-point, and bridge algorithms.
+- `Chapter41,DP(Part 1)/`, `Chapter42,DP,Part2/`, `chapter43,DP,Part3/`, `Chapter44,DP(Part4)/`, `Chapter45, DP Part(2)/`, and `Chapter46,DP,part6/` — Dynamic programming practice across multiple chapters.
 - `Chapter47,SegmentTrees/` — Segment tree problems and range queries.
 - `Chapter48,ExceptionHandling/` — Exception management and Java error handling.
+- `RabinKarp/`, `RandomizedQuickSort/`, `DFS/`, and `ELABDAA/` — Additional algorithm implementations and practice work outside the numbered chapters.
 - Other standalone files, examples, experiments, and practice problems are stored in the repository root.
 
 ## How to Use

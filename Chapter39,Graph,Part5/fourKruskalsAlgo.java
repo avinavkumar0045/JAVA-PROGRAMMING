@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.*; // watch video for this and the prev one
 public class fourKruskalsAlgo {
     static class Edge implements Comparable<Edge>{
         int src;
@@ -23,7 +23,7 @@ public class fourKruskalsAlgo {
             edges.add(new Edge(2,3,50));
         }
          
-        static int n =4; // vertces 
+        static int n =4; // vertices 
         static int par[] = new int[n];
         static int rank[] = new int[n];
 
@@ -60,7 +60,7 @@ public class fourKruskalsAlgo {
         init();
         Collections.sort(edges); // O( E log(E))
         int mstCost =0;
-        int  count  = 0;
+        int count  = 0;
 
         for( int i =0; i<V-1 ;i++){ // O(V)
             Edge e = edges.get(i);
@@ -68,7 +68,7 @@ public class fourKruskalsAlgo {
 
             int parA = find(e.src); // ParA
             int parB = find(e.dest); // parB
-            if( parA != parB){ // agr same hot to cycle , not to do anything 
+            if( parA != parB){ // agr same ho to cycle , not to do anything 
                 union(e.src , e.dest);
                 mstCost += e.wt;
                 count++;

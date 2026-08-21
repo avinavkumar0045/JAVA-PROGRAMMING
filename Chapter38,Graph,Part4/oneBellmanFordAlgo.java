@@ -17,7 +17,7 @@ public class oneBellmanFordAlgo { // we use bellmanFord theorem as Dijikstra can
         }
         // Sahi order mein save krne se bhi fark padta hai
         // 0-vertex
-        graph[0].add(new Edge(0,1,2));
+        graph[0].add(new Edge(0,1,2)); // directed
         graph[0].add(new Edge(0,2,4));
         // 1-vertex
          graph[1].add(new Edge(1,2,-4));      
@@ -49,7 +49,7 @@ public class oneBellmanFordAlgo { // we use bellmanFord theorem as Dijikstra can
                     int v = e.dest;
                     int wt = e.wt;
 
-                    if( dist[u] != Integer.MAX_VALUE && dist[u] + wt < dist[v] ){ // checking the condition li wo infinite to nahi hai, comapring 
+                    if( dist[u] != Integer.MAX_VALUE && dist[u] + wt < dist[v] ){ // checking the condition like  wo infinite to nahi hai, comapring 
                             dist[v] = dist[u] + wt; 
                     }
                 }

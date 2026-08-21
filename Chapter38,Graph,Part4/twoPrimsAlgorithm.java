@@ -66,7 +66,6 @@ public class twoPrimsAlgorithm{
         System.out.println("Final cost of MSP :"+ finalcost);
     }   
     public static void main(String[] args) {
-        
         int V  = 4;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);

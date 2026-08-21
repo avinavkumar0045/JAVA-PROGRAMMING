@@ -27,36 +27,31 @@ public class threeShortestPath {
          graph[5].add(new Edge(5,2)); 
 
     }
-    public static void printAllPath( ArrayList<Edge> graph[] , int src , int des){
-      int src1 = src;
-      int count =0;
-    for( int j =0; j<graph.length-1;j++){
-       
-        if( src == des){     
-            System.out.print(src1+"->"+des+": "+ count ); 
-            System.out.println();
-            return;
-        }
 
-        for( int i =0; i<graph[src].size();i++){
-            Edge e = graph[src].get(i);
-            count++;
-            printAllPath(graph , e.dest, des); // path + src hai yeha pe to start with 
-        }
+    public static void printAllPath(ArrayList<Edge> graph[], int src, int des,String path, int count) {
+
+    if (src == des) {
+        System.out.println(path + " : " + count);
+        return;
     }
+
+    for (int i = 0; i < graph[src].size(); i++) {
+        Edge e = graph[src].get(i);
+        printAllPath(graph, e.dest, des, path + "->" + e.dest,count + 1);
     }
+}
 
     public static void main(String[] args) {
         int v = 6;
         ArrayList<Edge> graph[] =  new ArrayList[v];
         createGraph(graph);
         String path;
-        int src =5 ; int des = 1;
-        for( int i =1; i< graph.length;i++){
-        printAllPath(graph , src, i );
-        }
-        
-            
+        int src = 5;
+        for (int i = 0; i < graph.length; i++) {
+            if (i != src) {
+                printAllPath(graph, src, i, String.valueOf(src), 0);
+            }
+        }   
     }
     
 }

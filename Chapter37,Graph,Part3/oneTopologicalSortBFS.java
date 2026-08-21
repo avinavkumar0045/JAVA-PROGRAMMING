@@ -38,21 +38,22 @@ public class oneTopologicalSortBFS {
             }
         }
     }
-   public static void TopSort(ArrayList<Edge> graph[]){
+    public static void TopSort(ArrayList<Edge> graph[]){
      int indegre[] = new int[graph.length];
      Calcindegree(graph, indegre);
 
      Queue<Integer> q = new LinkedList<>();
 
-     for( int i =0;i <indegre.length;i++){
+     for( int i =0;i <indegre.length;i++){ // phele wo print kro jiski indegree 0 hai  
         if( indegre[i] == 0){
             q.add(i);
         }
      }
+     
 
      // BFS
      
-      while( !q.isEmpty()){
+        while( !q.isEmpty()){
             int curr = q.remove();
             System.out.print(curr+" ");
 
@@ -65,7 +66,7 @@ public class oneTopologicalSortBFS {
                 }
             }
         }
-       System.out.println();
+        System.out.println();
    }
   
     public static void main(String[] args) {
